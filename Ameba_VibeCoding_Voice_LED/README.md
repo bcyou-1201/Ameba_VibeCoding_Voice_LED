@@ -1,6 +1,6 @@
 # AMB82-MINI Vibe Coding Voice LED Web Controller
 
-第二版：Web 控制介面 + Python Flask + USB Serial + AMB82-MINI。
+Web 控制介面 + Python Flask + USB Serial + AMB82-MINI。
 
 ## 功能
 - 左邊開燈 → 藍燈 LED_B
