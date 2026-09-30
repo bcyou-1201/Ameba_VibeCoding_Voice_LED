@@ -1,0 +1,3 @@
+建立虛擬環境：python -m venv .venv
+開啟虛擬環境：.\.venv\Scripts\Activate.ps1 
+執行程式：python backend/app.py 

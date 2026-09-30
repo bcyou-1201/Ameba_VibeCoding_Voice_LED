@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Ameba Mini 語音 LED 控制系統</title>
+<link rel="stylesheet" href="/style.css"></head><body><div class="container">
+<header><div><h1>🎙️ Ameba Mini 語音 LED 控制系統</h1><p>Vibe Coding Project · AMB82-MINI</p></div><div id="connectionBadge" class="badge offline">● 未連線</div></header>
+<div class="lan-access">區域網路網址：<code id="lan-url">載入中...</code></div>
+<section class="card"><h2>開發板連線</h2><div class="row"><button id="connectBtn">連線開發板</button><button id="disconnectBtn" class="secondary">中斷連線</button><span id="portText">Port：COM5</span></div></section>
+<section class="grid"><div class="card"><h2>🎤 語音控制</h2><button id="voiceBtn" class="voice-btn">🎙️ 開始語音辨識</button><p class="label">辨識結果</p><div id="recognition" class="box">尚未辨識</div><p class="label">執行回饋</p><div id="message" class="box">尚未執行指令</div><div id="speechSupport" class="hint"></div></div>
+<div class="card"><h2>💡 LED 即時狀態</h2><div class="led-grid"><div class="led-panel"><div id="blueLed" class="led blue-off"></div><b>藍燈 LED_B</b><div id="blueText">OFF</div></div><div class="led-panel"><div id="greenLed" class="led green-off"></div><b>綠燈 LED_G</b><div id="greenText">OFF</div></div></div><div class="hint">狀態以 AMB82-MINI 回傳 STATE 為依據。</div></div></section>
+<section class="card"><h2>⌨️ 文字指令測試</h2><div class="row"><input id="commandInput" placeholder="例如：左邊開燈"><button id="executeBtn">執行</button></div><div class="quick-buttons"><button data-command="左邊開燈">🔵 左邊開燈</button><button data-command="右邊開燈">🟢 右邊開燈</button><button data-command="藍燈閃爍三次">🔵 藍燈閃爍三次</button><button data-command="綠燈閃爍三次">🟢 綠燈閃爍三次</button><button data-command="全部關燈">⚫ 全部關燈</button><button data-command="查詢狀態">🔄 查詢狀態</button></div></section>
+<section class="card"><h2>📋 系統紀錄</h2><div id="log" class="log"></div></section></div><script src="/app.js"></script></body></html>
